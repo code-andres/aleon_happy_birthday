@@ -38311,14 +38311,14 @@ var Game = function () {
     key: 'win',
     value: function win() {
       _Sound2.default.play('champ');
-      this.gameStatus = 'You Win!';
+      this.gameStatus = '¡Ganaste!';
       this.showReplay(this.getScoreMessage());
     }
   }, {
     key: 'loss',
     value: function loss() {
       _Sound2.default.play('loserSound');
-      this.gameStatus = 'You Lose!';
+      this.gameStatus = '¡Perdiste!';
       this.showReplay(this.getScoreMessage());
     }
   }, {
@@ -38360,7 +38360,7 @@ var Game = function () {
       this.stage.hud.createTextBox('replayButton', {
         location: _Stage2.default.replayButtonLocation()
       });
-      this.stage.hud.replayButton = replayText + ' Play Again?';
+      this.stage.hud.replayButton = replayText + ' ¿Jugar de nuevo?';
     }
   }, {
     key: 'openLevelCreator',
