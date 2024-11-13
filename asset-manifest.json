@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/aleon_happy_birthday/static/css/main.8b83849b.css",
+    "main.js": "/aleon_happy_birthday/static/js/main.a5a20002.js",
+    "static/js/646.36ff4670.chunk.js": "/aleon_happy_birthday/static/js/646.36ff4670.chunk.js",
+    "index.html": "/aleon_happy_birthday/index.html",
+    "main.8b83849b.css.map": "/aleon_happy_birthday/static/css/main.8b83849b.css.map",
+    "main.a5a20002.js.map": "/aleon_happy_birthday/static/js/main.a5a20002.js.map",
+    "646.36ff4670.chunk.js.map": "/aleon_happy_birthday/static/js/646.36ff4670.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8b83849b.css",
+    "static/js/main.a5a20002.js"
+  ]
+}
