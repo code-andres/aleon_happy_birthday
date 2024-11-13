@@ -108,7 +108,7 @@
 .cassette .label .cutout:after {
   position: absolute;
   display: block;
-  content: "FELIZ 31";
+  content: "FELIZ 32";
   color: rgba(255, 255, 255, 0.8);
   font-size: 1.5em;
   font-weight: bold;
@@ -433,13 +433,9 @@
   height: 100vh;
 }
 
-@media (max-width: 800px) {
-  .welcome {
-    padding-left: 50px;
-  }
-}
-
 .start {
+  width: 100%;
+  padding-left: 35px;
   font-family: "Press Start 2P", system-ui;
   font-weight: 400;
   font-style: normal;
@@ -447,6 +443,13 @@
   margin-bottom: 20px;
   text-align: center;
   color: var(--color-primary);
+}
+
+.ttext {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
 }
 
 .game {
@@ -458,4 +461,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
 }

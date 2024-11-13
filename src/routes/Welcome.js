@@ -1,15 +1,15 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 
 import { Bounce, Fade } from "react-awesome-reveal";
-import Game from "../components/Game.js";
 
 const Welcome = () => {
-  const [audio] = useState(new Audio("/audio/music.mp3"));
+  const [audio] = useState(new Audio("/aleon_happy_brithay/audio/music.mp3"));
   const [bounce, setBounce] = useState(true);
   const [showBounce, setShowBounce] = useState(true);
   const [showLoader, setShowLoader] = useState(false);
   const [showCassette, setShowCassette] = useState(false);
   const [showCassetteFade, setShowCassetteFade] = useState(true);
+  const [showGame, setShowGame] = useState(false);
   const bounceInterval = useRef(null);
 
   useEffect(() => {
@@ -25,7 +25,7 @@ const Welcome = () => {
         setShowCassette(true);
         setTimeout(() => {
           setShowCassetteFade(false);
-          document.location.href = "/game.html";
+          setShowGame(true);
         }, 5000);
       }, 2500);
     }, { once: true });
@@ -99,6 +99,20 @@ const Welcome = () => {
       </Fade>
     )
   };
+
+  const renderGame = useMemo(() => {
+    return (
+      <iframe
+        src="/aleon_happy_brithay/game.html"
+        className="game"
+        style={{ margin: 0, padding: 0, width: "100vw", height: "100vh" }}
+      />
+    );
+  }, []);
+
+  if (showGame) {
+    return renderGame;
+  }
 
   return (
     <div className="welcome">
