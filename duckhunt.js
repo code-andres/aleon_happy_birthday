@@ -38685,13 +38685,13 @@ function parseQueryParamAsInt(param) {
 module.exports.parseLevelQueryString = function () {
   return {
     id: -1,
-    title: '¡31 Pasteles!',
-    waves: 3,
-    ducks: 31,
+    title: '¡32 Pasteles!',
+    waves: 1,
+    ducks: 32,
     pointsPerDuck: 1,
-    speed: 8,
+    speed: 5,
     bullets: 100,
-    radius: 30,
+    radius: 60,
     time: 60
   };
 };
